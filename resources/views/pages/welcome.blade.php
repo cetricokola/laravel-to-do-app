@@ -43,6 +43,11 @@
 
         </div>
     </div>
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> Cytonn.com</a>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

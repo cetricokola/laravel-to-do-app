@@ -11,9 +11,8 @@ class TasksController extends Controller
     public function index()
     {
         $tasks = tasks::all();
-        return view('welcome', ['tasks' => $tasks]);
+        return view('pages.home', ['tasks' => $tasks]);
     }
-
     public function create()
     {
         //
@@ -27,7 +26,6 @@ class TasksController extends Controller
         $task->save();
         return redirect('/');
     }
-
     public function show($id)
     {
         //
@@ -45,12 +43,10 @@ class TasksController extends Controller
         $task->save();
         return redirect()->route('/');
     }
-
     public function destroy($id)
     {
         $task = tasks::findOrFail($id);
         $task->delete();
         return redirect()->route('/');
-
     }
 }
